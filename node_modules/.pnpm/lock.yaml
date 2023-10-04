@@ -1,0 +1,16 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+dependencies:
+  '@next/font':
+    specifier: ^13.5.4
+    version: 13.5.4
+
+packages:
+
+  /@next/font@13.5.4:
+    resolution: {integrity: sha512-rOMki1/9BP9N93RZABiiF0EidMGgyCvNVSKvLLAnMkVh/IYk4Z827+NRuxCyRQCeT3vv/AeCiP5SFPAP10SPrQ==}
+    dev: false
