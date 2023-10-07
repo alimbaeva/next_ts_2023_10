@@ -1,5 +1,10 @@
 import React from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
+
+const DynamicThemeSwitcher = dynamic(() => import('../themeSwitcher/ThemeSwitcher'), {
+    ssr: false,
+  });
 
 export default function Header() {
   return (
@@ -10,6 +15,7 @@ export default function Header() {
             <p>Home</p>
           </Link>
         </nav>
+        <DynamicThemeSwitcher />
     </header> 
   )
 };

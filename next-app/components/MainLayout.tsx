@@ -4,7 +4,7 @@ import Footer from "./footer/Footer";
 
 export default function MainLayout({ children}: {children: ReactNode}) {
   return (
-    <div>
+    <div className="text--colors_default bg--default">
         <Header />
       <main>
         {children}
