@@ -1,8 +1,7 @@
-import './globals.css'
+import '../styles/globals.css'
 import type { Metadata } from 'next'
 import { Raleway, Merriweather_Sans, Lora } from "@next/font/google";
-// import { Inter } from 'next/font/google'
-// import { Inter, Inconsolata, Lora } from 'next/font/google';
+import { ThemeProvider } from '../components/theme/ThemeContext';
 
 export const raleway = Raleway({
   weight: ['400', '700'],
@@ -38,7 +37,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${raleway.variable} ${merriweather.variable} ${lora.variable}`}>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>
+          <header>header</header>
+          {children}
+          <footer>Footer</footer>
+        </ThemeProvider>
+      </body>
     </html>
   )
 }
