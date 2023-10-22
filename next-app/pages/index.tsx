@@ -26,7 +26,7 @@ export const lora = Lora({
 export default function Home() {
   return (
     <main
-      className={` min-h-screen ${raleway.variable} ${merriweather.variable} ${lora.variable}`}
+      className={`min-h-screen ${raleway.variable} ${merriweather.variable} ${lora.variable}`}
     >
       <h1 className="font-merriweather">rrrrrr dfdfdeii</h1>
     </main>

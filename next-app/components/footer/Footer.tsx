@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <footer>
+        <footer className="flex-cente">
             <p>Footer</p>
         </footer>
     )

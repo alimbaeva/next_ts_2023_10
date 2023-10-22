@@ -37,7 +37,7 @@ export default function ThemeSwitcher() {
   }, [isLight]);
 
   return (
-    <div className='theme-switcher items-center ml-12 hidden'>
+    <div className='theme-switcher items-center ml-12'>
       <button
         type='button'
         className={`dark-mode-switch cursor-pointer mr-6 w-[40px] h-[40px] p-[10px] rounded-[100%]
